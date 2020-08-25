@@ -127,11 +127,13 @@ body a {
   transition: 0.2s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu--active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -225,11 +227,12 @@ body a {
 }
 
 .hero {
-  background: #f1f1f1 url("../../img/hero-bg.jpg") no-repeat center top 80px;
-  background-size: contain;
-  padding-top: 150px;
+  background: #f1f1f1 url("../../img/hero-bg.jpg") no-repeat center top;
+  background-size: cover;
+  padding-top: 120px;
   padding-bottom: 270px;
   text-align: right;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -250,8 +253,8 @@ body a {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top right 20%;
+    background-size: 100%;
+    background-position: top left;
   }
 }
 
