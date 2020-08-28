@@ -26,6 +26,12 @@
 	}
 }
 
+@media(max-width:768px) {
+	.hero {
+		padding-bottom: 150px;
+	}
+}
+
 @media (max-width:576px) {
 	.logo {
 		display: none;
