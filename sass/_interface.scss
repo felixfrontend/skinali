@@ -1,10 +1,14 @@
 body {
 	@include light;
 	color: $text-color;
-	a {
-		text-decoration: none;
-	}
 }
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+
 
 .section {
 	padding: 100px 0;
@@ -35,6 +39,26 @@ body {
 	background-color: $color-primary;
 	color: #fff;
 	@include bold;
+	&-fitting {
+		padding: 10px;
+		text-transform: uppercase;
+		color:$color-primary;
+		background-color: #fff;
+		border: none;
+		font-size: 11px;
+	}
+	&-add {
+		background-color: lighten($color-primary, 10%);
+		padding: 10px;
+		color: #fff;
+		font-size: 11px;
+		border: none;
+	}
+	&-like {
+		background-color:$color-primary;
+		width: 30px;
+		border: none;
+	}
 }
 .bg-secondary {
 	background: $bg-secondary;
